@@ -1,0 +1,15 @@
+artifact_uri: file:///home/sarang/Desktop/MLops-Data-Science-Project/mlruns/0/e253d895557a46718ed12cf22a986e80/artifacts
+end_time: 1749499928963
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: e253d895557a46718ed12cf22a986e80
+run_name: fun-owl-290
+run_uuid: e253d895557a46718ed12cf22a986e80
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1749499917408
+status: 3
+tags: []
+user_id: sarang
