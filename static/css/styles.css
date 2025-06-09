@@ -1,0 +1,379 @@
+/* ===== Google Fonts =====
+Add this line in your HTML <head> section:
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+*/
+
+/* ===== Base Styles ===== */
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    background: #121212;
+    color: #ddd;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+/* ===== Typography ===== */
+h1, h2 {
+    font-family: 'Lora', serif;
+    color: #8a6eff;
+    margin-bottom: 0.6em;
+    letter-spacing: 0.05em;
+}
+
+h1 {
+    font-size: 3.4rem;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.form-detail h2 {
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.4em;
+    color: #bbb;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+}
+
+/* ===== Navbar ===== */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    background: #1e1e2f;
+    border-bottom: 1px solid #2c2c44;
+    box-shadow: 0 2px 8px rgba(50, 50, 70, 0.8);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    animation: slideDownFadeIn 0.6s ease forwards;
+}
+
+@keyframes slideDownFadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.navbar-brand {
+    color: #8a6eff !important;
+    font-weight: 800;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    cursor: pointer;
+    user-select: none;
+    transition: color 0.3s ease;
+}
+
+.navbar-brand:hover {
+    color: #b498ff !important;
+}
+
+.navbar-toggler {
+    background: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: #bbb;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.navbar-toggler:hover {
+    color: #8a6eff;
+}
+
+.navbar-menu {
+    display: flex;
+    gap: 1.6rem;
+}
+
+.navbar-menu a {
+    color: #bbb;
+    font-weight: 600;
+    text-decoration: none;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.navbar-menu a::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #8a6eff;
+    transition: width 0.3s ease;
+}
+
+.navbar-menu a:hover,
+.navbar-menu a:focus {
+    color: #8a6eff;
+}
+
+.navbar-menu a:hover::after,
+.navbar-menu a:focus::after {
+    width: 100%;
+}
+
+/* ===== Header / Masthead ===== */
+.masthead {
+    background: linear-gradient(135deg, #322f4c 0%, #6e5bff 100%);
+    padding: 8rem 2rem 6rem;
+    color: #f0f0ff;
+    text-align: center;
+    box-shadow: inset 0 0 150px 30px rgba(255, 255, 255, 0.07);
+    user-select: none;
+    position: relative;
+}
+
+.site-heading h1 {
+    font-size: 4rem;
+    font-weight: 900;
+    letter-spacing: 0.1em;
+    margin-bottom: 0.3em;
+    text-shadow: 0 2px 8px rgba(102, 76, 255, 0.8);
+    line-height: 1.1;
+}
+
+/* ===== Form Styles ===== */
+.form-v9-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+    max-width: 520px;
+    margin: 50px auto 4rem; /* margin top to push form down */
+    background: #1a1a2e;
+    padding: 45px 40px 50px;
+    border-radius: 16px;
+    box-shadow: 0 15px 40px rgba(104, 78, 255, 0.6);
+    transition: box-shadow 0.4s ease;
+    animation: fadeInScale 0.5s ease forwards;
+}
+
+@keyframes fadeInScale {
+    0% {
+        opacity: 0;
+        transform: scale(0.92);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.form-row-total {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .form-row-total {
+        grid-template-columns: 1fr;
+    }
+}
+
+.form-row {
+    width: 100%;
+}
+
+.input-text {
+    width: 100%;
+    padding: 14px 20px;
+    background: #2a2a46;
+    border: 2px solid transparent;
+    border-radius: 12px;
+    color: #ddd;
+    font-size: 1.05rem;
+    transition: border-color 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.3);
+    box-sizing: border-box;
+}
+
+.input-text::placeholder {
+    color: #8a8aad;
+    font-style: italic;
+}
+
+.input-text:focus {
+    background: #3c3b69;
+    border-color: #8a6eff;
+    outline: none;
+    box-shadow: 0 0 14px 3px #8a6eff88;
+}
+
+.register {
+    width: 100%;
+    background: linear-gradient(45deg, #8a6eff, #b498ff);
+    color: #121212;
+    font-weight: 700;
+    font-size: 1.2rem;
+    padding: 16px 0;
+    border: none;
+    border-radius: 14px;
+    cursor: pointer;
+    box-shadow: 0 8px 18px #b498ffbb;
+    transition: background 0.4s ease, box-shadow 0.4s ease, transform 0.2s ease;
+    user-select: none;
+    animation: pulseGlow 3s ease-in-out infinite;
+    margin-top: 30px;
+}
+
+.register:hover,
+.register:focus {
+    animation: none;
+    background: linear-gradient(45deg, #b498ff, #8a6eff);
+    box-shadow: 0 12px 28px #d2c3ffcc;
+    transform: scale(1.05);
+}
+
+@keyframes pulseGlow {
+    0%, 100% {
+        box-shadow: 0 8px 18px #b498ffbb;
+        transform: scale(1);
+    }
+    50% {
+        box-shadow: 0 12px 28px #d2c3ffcc;
+        transform: scale(1.02);
+    }
+}
+
+/* ===== Result Page Styling ===== */
+
+/* Hide YouTube and GitHub buttons on result page */
+/* Replace selectors below with actual classes or IDs of the buttons */
+.btn-youtube,
+.btn-github {
+    display: none !important;
+}
+
+/* Result container styling - adjust as needed */
+.result-container {
+    background: #27274d;
+    color: #dcd6f7;
+    padding: 30px 25px;
+    max-width: 600px;
+    margin: 40px auto;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(104, 78, 255, 0.8);
+    font-family: 'Lora', serif;
+    font-size: 1.4rem;
+    line-height: 1.8;
+    text-align: center;
+    user-select: text;
+    transition: background-color 0.3s ease;
+}
+
+.result-container strong {
+    color: #b498ff;
+    font-weight: 700;
+    font-size: 1.6rem;
+}
+
+.result-container p {
+    margin-top: 1rem;
+}
+
+/* ===== Footer ===== */
+footer {
+    background: #1e1e2f;
+    padding: 36px 20px;
+    text-align: center;
+    color: #999bbb;
+    border-top: 1px solid #333355;
+    font-size: 0.95rem;
+    user-select: none;
+}
+
+footer a {
+    color: #8a6eff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #d4cfff;
+    text-decoration: underline;
+}
+
+/* ===== Font Awesome Icons ===== */
+.fa-stack .fa-circle {
+    color: #444466;
+    transition: color 0.3s ease;
+}
+
+.fa-inverse {
+    color: #8a6eff;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+    .form-row-total {
+        grid-template-columns: 1fr;
+    }
+
+    .masthead {
+        padding: 6rem 1rem 4rem;
+    }
+
+    .site-heading h1 {
+        font-size: 2.8rem;
+    }
+
+    .form-v9-content {
+        margin: 60px auto 3rem;
+        padding: 35px 30px 40px;
+        border-radius: 14px;
+    }
+
+    .register {
+        font-size: 1rem;
+        padding: 14px 0;
+        margin-top: 30px;
+    }
+
+    .navbar-menu {
+        display: none;
+    }
+
+    /* Make sure result container shrinks on mobile */
+    .result-container {
+        max-width: 95%;
+        font-size: 1.2rem;
+        padding: 20px 15px;
+    }
+}
