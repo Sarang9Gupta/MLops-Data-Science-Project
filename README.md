@@ -6,9 +6,8 @@ An end-to-end Machine Learning pipeline built with **Python**, following MLOps b
 
 ## 📸 Demo
 
-![Demo Screenshot](https://github.com/Sarang9Gupta/MLops-Data-Science-Project/assets/demo-screenshot-placeholder)
-
-> *(Replace the image link above with a real screenshot or gif if available)*
+![Screenshot from 2025-06-11 12-57-15](https://github.com/user-attachments/assets/8f8f5483-2b29-4625-803f-0f02c853ad2a)
+![Screenshot from 2025-06-11 12-58-17](https://github.com/user-attachments/assets/047f13b4-026b-4d44-97ef-872fd83b0cf3)
 
 ---
 
