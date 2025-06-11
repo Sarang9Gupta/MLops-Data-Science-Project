@@ -127,22 +127,22 @@ MLflow is used for:
 
 ## 📌 Requirements
 
-pandas 
-mlflow==2.2.2
-notebook
-numpy
-scikit-learn
-matplotlib
-python-box==6.0.2
-pyYAML
-tqdm
-ensure==1.0.2
-joblib
-types-PyYAML
-Flask
-Flask-Cors
-setuptools==65.5.0
--e .
+- pandas 
+- mlflow==2.2.2
+- notebook
+- numpy
+- scikit-learn
+- matplotlib
+- python-box==6.0.2
+- pyYAML
+- tqdm
+- ensure==1.0.2
+- joblib
+- types-PyYAML
+- Flask
+- Flask-Cors
+- setuptools==65.5.0
+- -e .
 
 To export your environment, use:
 
