@@ -54,12 +54,13 @@ git clone https://github.com/Sarang9Gupta/MLops-Data-Science-Project.git
 cd MLops-Data-Science-Project
 ```
 
-### 2. Create Virtual Environment
+### 2. Create Conda Environment
 
 ```bash
-python3 -m venv venv
-source venv/bin/activate        # On Windows: venv\Scripts\activate
+conda create -n mlops-env python=3.8 -y
+conda activate mlops-env
 ```
+
 
 ### 3. Install Requirements
 
