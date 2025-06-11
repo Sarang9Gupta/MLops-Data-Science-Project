@@ -128,30 +128,28 @@ MLflow is used for:
 
 ## 📌 Requirements
 
-- Python 3.8+
-- scikit-learn
-- pandas
-- numpy
-- Flask
-- joblib
-- mlflow
+pandas 
+mlflow==2.2.2
+notebook
+numpy
+scikit-learn
+matplotlib
+python-box==6.0.2
+pyYAML
+tqdm
+ensure==1.0.2
+joblib
+types-PyYAML
+Flask
+Flask-Cors
+setuptools==65.5.0
+-e .
 
 To export your environment, use:
 
 ```bash
 pip freeze > requirements.txt
 ```
-
----
-
-## 🤝 Contributing
-
-Contributions are welcome!
-
-1. Fork the repo  
-2. Create a new branch: `git checkout -b feature/your-feature`  
-3. Commit your changes  
-4. Push your branch and open a Pull Request
 
 ---
 
