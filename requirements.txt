@@ -12,4 +12,5 @@ joblib
 types-PyYAML
 Flask
 Flask-Cors
+setuptools==65.5.0
 -e .
